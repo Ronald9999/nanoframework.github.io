@@ -12,6 +12,7 @@ Here are solutions to some common problems when getting started.
 - Toggle the **Disable Device Watchers** button ![Disable Device Watchers](../../images/getting-started-guides/disable-device-watchers.png) on the **Device Explorer** ON then back OFF.  This will cause the extension to rescan all of the COM ports.
 - Try a different USB cable, or test cable on a known good device.  Sometimes it is difficult to tell if a cable was only intended to be used for charging and does not carry the signal wires.  Cables over 2M/6FT are to be suspected since those are often power only cables.
 - Some STM32 devices need to use two USB cables - one for power and one for serial/COM. See [Getting Started Guide for managed code (C#)](../getting-started-guides/getting-started-managed.md).
+- Sometimes, the code crashes, and it's necessary to restore the device to its original state. You can do this with the command: esptool --chip esp32 erase_flash."
 
 ## When you attempt to debug you get a deployment error and you see a message "Couldn't find a valid assembly required by mscorlib..." in the Output Window/.NET nanoFramework Extension
 
